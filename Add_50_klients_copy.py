@@ -3,9 +3,11 @@ from selenium.webdriver.common.by import By
 import time
 import random
 #value
-link = "https://klientiks.ru/login"
-phone_number =(9627065473)
-passw=(153290)
+link = ""
+log_pasw=open("C:\\file_1.txt", 'rt')
+phone_number =(int(log_pasw.read(10)))
+passw=((int(log_pasw.read(7))))
+log_pasw.close()
 n_count= int(0)
 a=0
 b=1
